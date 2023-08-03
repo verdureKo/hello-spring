@@ -1,6 +1,7 @@
-package hello.hellospring.Repository;/*
+package hello.hellospring.domain.member.repository;/*
+package hello.hellospring.Repository;
 
-import hello.hellospring.Domain.Member;
+import hello.hellospring.domain.member.entity.Member.Member;
 import org.junit.jupiter.api.*;
 
 import java.util.List;
@@ -22,6 +23,8 @@ class MemoryMemberRepositoryTest {
         member1.setName("spring1");
         member2.setName("spring2");
     }
+
+
 
     @Test
     @Timeout(value = 1 , unit = TimeUnit.MILLISECONDS)
@@ -46,4 +49,7 @@ class MemoryMemberRepositoryTest {
         List<Member> result = memberRepository.findAll();
         assertThat(result.size()).isEqualTo(2);
     }
-}*/
+
+
+}
+*/

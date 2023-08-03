@@ -1,20 +1,21 @@
-package hello.hellospring.Repository;/*
+package hello.hellospring.before.repository;/*
+package hello.hellospring.Repository;
 
-import hello.hellospring.Domain.Member;
-import jakarta.persistence.EntityManager;
+import hello.hellospring.domain.member.entity.Member.Member;
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.EntityManager;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
-public class JpaMemberRepository {
+public class JpaMemberRepository implements MemberRepository {
 
     private final EntityManager em;
 
     public JpaMemberRepository(EntityManager em) {
         this.em = em;
     }
+
 
     public Member save(Member member) {
         em.persist(member);
@@ -38,4 +39,13 @@ public class JpaMemberRepository {
         return result.stream().findAny();
     }
 
-}*/
+    @Override
+    public List<Member> findByAge(Long age) {
+        return em.createQuery("select m from Member m where  m.age = :age", Member.class)
+                .setParameter("age", age)
+                .getResultList();
+
+    }
+
+}
+*/

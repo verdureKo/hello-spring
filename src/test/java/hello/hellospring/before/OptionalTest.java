@@ -1,4 +1,4 @@
-package hello.hellospring;
+package hello.hellospring.before;
 
 import org.junit.jupiter.api.Test;
 
@@ -24,8 +24,8 @@ public class OptionalTest {
 
 
     private String create_name() {
-        System.out.println("푸름짱");
-        return "푸름짱";
+        System.out.println("이학근");
+        return "이학근";
     }
 
 
@@ -33,7 +33,7 @@ public class OptionalTest {
     public void orElseThrow_Test() throws Exception {
         String name = "고푸름";
         Optional<String> op = Optional.ofNullable(name);
-        String result = op.orElseThrow( ()-> new Exception("망함") );
+        String result = op.orElseThrow( ()-> new Exception("일났네..") );
         System.out.println(result);
     }
 }
