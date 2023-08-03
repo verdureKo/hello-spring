@@ -1,4 +1,4 @@
-package hello.hellospring.Repository;
+package hello.hellospring.Repository;/*
 
 import hello.hellospring.Domain.Member;
 import jakarta.persistence.EntityManager;
@@ -38,4 +38,4 @@ public class JpaMemberRepository {
         return result.stream().findAny();
     }
 
-}
+}*/

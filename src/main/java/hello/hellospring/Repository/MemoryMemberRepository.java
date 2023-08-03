@@ -1,4 +1,4 @@
-package hello.hellospring.Repository;
+package hello.hellospring.Repository;/*
 
 import hello.hellospring.Domain.Member;
 import org.springframework.stereotype.Repository;
@@ -36,4 +36,4 @@ public class MemoryMemberRepository implements MemberRepository {
         return new ArrayList<>(store.values());
     }
 
-}
+}*/

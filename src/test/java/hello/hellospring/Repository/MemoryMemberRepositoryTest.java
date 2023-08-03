@@ -1,4 +1,4 @@
-package hello.hellospring.Repository;
+package hello.hellospring.Repository;/*
 
 import hello.hellospring.Domain.Member;
 import org.junit.jupiter.api.*;
@@ -46,6 +46,4 @@ class MemoryMemberRepositoryTest {
         List<Member> result = memberRepository.findAll();
         assertThat(result.size()).isEqualTo(2);
     }
-
-
-}
+}*/

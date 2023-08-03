@@ -1,4 +1,4 @@
-package hello.hellospring.Repository;
+package hello.hellospring.Repository;/*
 
 import hello.hellospring.Domain.Member;
 
@@ -13,4 +13,4 @@ public interface MemberRepository{
     Optional<Member> findByName(String name);
     List<Member> findAll();
 
-}
+}*/

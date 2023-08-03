@@ -1,4 +1,4 @@
-package hello.hellospring;
+package hello.hellospring;/*
 
 import hello.hellospring.Repository.JpaMemberRepository;
 import hello.hellospring.Repository.MemberRepository;
@@ -32,4 +32,4 @@ public class SpringConfig {
         return (MemberRepository) new JpaMemberRepository(em);
     }
 
-}
+}*/
