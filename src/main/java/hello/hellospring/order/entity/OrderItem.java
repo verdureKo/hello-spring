@@ -1,7 +1,7 @@
 package hello.hellospring.order.entity;
 
-import javax.persistence.*;
 
+import jakarta.persistence.*;
 
 @Entity
 public class OrderItem {

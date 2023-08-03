@@ -1,8 +1,9 @@
 package hello.hellospring.team.entity;
 
 import hello.hellospring.member.entity.Member;
+import jakarta.persistence.*;
+import jakarta.persistence.OneToMany;
 
-import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 

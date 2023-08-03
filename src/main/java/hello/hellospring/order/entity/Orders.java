@@ -1,8 +1,8 @@
 package hello.hellospring.order.entity;
 
 import hello.hellospring.member.entity.Member;
+import jakarta.persistence.*;
 
-import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity

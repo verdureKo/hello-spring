@@ -1,8 +1,8 @@
 package hello.hellospring.member.entity;
 
 import hello.hellospring.team.entity.Team;
+import jakarta.persistence.*;
 
-import javax.persistence.*;
 
 @Entity
 public class Member {
