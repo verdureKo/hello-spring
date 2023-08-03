@@ -2,10 +2,12 @@ package hello.hellospring.Repository;
 
 import hello.hellospring.Domain.Member;
 import jakarta.persistence.EntityManager;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class JpaMemberRepository {
 
     private final EntityManager em;

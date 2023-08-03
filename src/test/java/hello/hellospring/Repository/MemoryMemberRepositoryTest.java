@@ -23,12 +23,6 @@ class MemoryMemberRepositoryTest {
         member2.setName("spring2");
     }
 
-    @AfterEach
-    public void afterEach(){
-        memberRepository.clearRepository();
-    }
-
-
     @Test
     @Timeout(value = 1 , unit = TimeUnit.MILLISECONDS)
     public void save(){
